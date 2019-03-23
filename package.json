@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "random-js": "^2.0.0-rc5",
     "react": "^16.8.4",
+    "react-beautiful-dnd": "^10.1.0",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
   },
