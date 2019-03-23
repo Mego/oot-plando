@@ -62,7 +62,7 @@ const assignJunk = () => {
     return item;
 }
 
-export default class StonesMedallionsLocations extends Component {
+export default class Locations extends Component {
     constructor(props) {
         super(props);
         this.state = {

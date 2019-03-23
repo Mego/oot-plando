@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import StonesMedallionsLocations from './StonesMedallionsLocations';
+import Locations from './Locations';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-        <StonesMedallionsLocations />
+        <Locations />
     );
   }
 }
