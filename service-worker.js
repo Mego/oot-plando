@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/oot-plando/precache-manifest.7cef889f05d2c7f27045fc944a80389e.js"
+  "/oot-plando/precache-manifest.76de777dd00e25946ceec7d8a81cf3eb.js"
 );
 
 workbox.clientsClaim();
