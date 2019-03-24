@@ -93,7 +93,7 @@ export default class Locations extends Component {
         }
         for(let locationGroup of Object.values(LOCATIONS)) {
             for(let location of locationGroup) {
-                this.state[location] = [];
+                state[location] = [];
             }
         }
         this.setState(state);
@@ -203,7 +203,7 @@ export default class Locations extends Component {
                             <Tabs>
                                 <TabList>
                                 {Object.keys(LOCATIONS).map(locationName => (
-                                    <Tab>{locationName}</Tab>
+                                    <Tab key={locationName.split(' ').join('-')}>{locationName}</Tab>
                                 ))}
                                 </TabList>
                                 {Object.values(LOCATIONS).map((locationList) => (
