@@ -3,6 +3,8 @@ import DroppableLocation from './DroppableLocation';
 import { LOCATIONS, ITEMS, ITEM_COPIES, JUNK_POOL } from './Constants';
 import { Draggable, DragDropContext } from 'react-beautiful-dnd';
 import { MersenneTwister19937, pick as randomPick } from 'random-js';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import "react-tabs/style/react-tabs.css";
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
@@ -73,8 +75,10 @@ export default class Locations extends Component {
                 this.state.unassigned.push(item+(numCopies > 1 ? '-' + (i+1) : ''));
             }
         }
-        for(let location of LOCATIONS) {
-            this.state[location] = [];
+        for(let locationGroup of Object.values(LOCATIONS)) {
+            for(let location of locationGroup) {
+                this.state[location] = [];
+            }
         }
     }
 
@@ -87,8 +91,10 @@ export default class Locations extends Component {
                 state.unassigned.push(item+(numCopies > 1 ? '-' + (i+1) : ''));
             }
         }
-        for(let location of LOCATIONS) {
-            state[location] = [];
+        for(let locationGroup of Object.values(LOCATIONS)) {
+            for(let location of locationGroup) {
+                this.state[location] = [];
+            }
         }
         this.setState(state);
     }
@@ -191,42 +197,56 @@ export default class Locations extends Component {
                         <div style={
                             {
                                 width: '80%',
-                                float: 'right',
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                justifyContent: 'space-around',
-                                maxHeight: '95vh',
-                                overflowY: 'scroll'
+                                float: 'right'
                             }
                         }>
-                            {LOCATIONS.map((location) => (
-                                <DroppableLocation
-                                    key={location}
-                                    droppableId={location}
-                                    name={location.split('-').join(' ')}
-                                    style={{flex: 1}}
-                                    isDropDisabled={this.state[location].length > 0}>
-                                    {this.state[location].map((item, index) => (
-                                        <Draggable
-                                            key={item}
-                                            draggableId={item}
-                                            index={index}>
-                                            {(provided, snapshot) => (
-                                                <div
-                                                    ref={provided.innerRef}
-                                                    {...provided.draggableProps}
-                                                    {...provided.dragHandleProps}
-                                                    style={getItemStyle(
-                                                        snapshot.isDragging,
-                                                        provided.draggableProps.style
-                                                    )}>
-                                                    {item.split('-').join(' ')}
-                                                </div>
-                                            )}    
-                                        </Draggable>
-                                    ))}
-                                </DroppableLocation>
-                            ))}
+                            <Tabs>
+                                <TabList>
+                                {Object.keys(LOCATIONS).map(locationName => (
+                                    <Tab>{locationName}</Tab>
+                                ))}
+                                </TabList>
+                                {Object.values(LOCATIONS).map((locationList) => (
+                                    <TabPanel>
+                                        <div style={{
+                                            display: 'flex',
+                                            flexWrap: 'wrap',
+                                            justifyContent: 'space-around',
+                                            maxHeight: '75vh',
+                                            overflowY: 'auto'
+                                        }}>
+                                        {locationList.map(location => (
+                                            <DroppableLocation
+                                                key={location}
+                                                droppableId={location}
+                                                name={location.split('-').join(' ')}
+                                                style={{flex: 1}}
+                                                isDropDisabled={this.state[location].length > 0}>
+                                                {this.state[location].map((item, index) => (
+                                                    <Draggable
+                                                        key={item}
+                                                        draggableId={item}
+                                                        index={index}>
+                                                        {(provided, snapshot) => (
+                                                            <div
+                                                                ref={provided.innerRef}
+                                                                {...provided.draggableProps}
+                                                                {...provided.dragHandleProps}
+                                                                style={getItemStyle(
+                                                                    snapshot.isDragging,
+                                                                    provided.draggableProps.style
+                                                                )}>
+                                                                {item.split('-').join(' ')}
+                                                            </div>
+                                                        )}    
+                                                    </Draggable>
+                                                ))}
+                                            </DroppableLocation>
+                                        ))}
+                                        </div>
+                                    </TabPanel>
+                                ))}
+                            </Tabs>
                         </div>
                     </div>
                 </DragDropContext>
