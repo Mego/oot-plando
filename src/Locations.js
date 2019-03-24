@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import DroppableLocation from './DroppableLocation';
-import { LOCATIONS, ITEMS, ITEM_COPIES, JUNK_POOL } from './Constants';
+import { LOCATIONS, ITEMS, ITEM_COPIES, JUNK_POOL, REGION_COLORS } from './Constants';
 import { Draggable, DragDropContext } from 'react-beautiful-dnd';
 import { MersenneTwister19937, pick as randomPick } from 'random-js';
+
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
@@ -73,8 +74,12 @@ export default class Locations extends Component {
                 this.state.unassigned.push(item+(numCopies > 1 ? '-' + (i+1) : ''));
             }
         }
-        for(let location of LOCATIONS) {
-            this.state[location] = [];
+        for(var region in LOCATIONS) {
+          for(var area in LOCATIONS[region]) {
+              for(let location of LOCATIONS[region][area]) {
+                this.state[location] = [];
+              }
+            }
         }
     }
 
@@ -87,8 +92,12 @@ export default class Locations extends Component {
                 state.unassigned.push(item+(numCopies > 1 ? '-' + (i+1) : ''));
             }
         }
-        for(let location of LOCATIONS) {
-            state[location] = [];
+        for(var region in LOCATIONS) {
+          for(var area in LOCATIONS[region]) {
+              for(let location of LOCATIONS[region][area]) {
+                state[location] = [];
+              }
+            }
         }
         this.setState(state);
     }
@@ -183,14 +192,14 @@ export default class Locations extends Component {
                                                 )}>
                                                 {item.split('-').join(' ')}
                                             </div>
-                                        )}    
+                                        )}
                                     </Draggable>
                                 ))}
                             </DroppableLocation>
                         </div>
                         <div style={
                             {
-                                width: '80%',
+                                width: '85%',
                                 float: 'right',
                                 display: 'flex',
                                 flexWrap: 'wrap',
@@ -199,34 +208,79 @@ export default class Locations extends Component {
                                 overflowY: 'scroll'
                             }
                         }>
-                            {LOCATIONS.map((location) => (
-                                <DroppableLocation
-                                    key={location}
-                                    droppableId={location}
-                                    name={location.split('-').join(' ')}
-                                    style={{flex: 1}}
-                                    isDropDisabled={this.state[location].length > 0}>
-                                    {this.state[location].map((item, index) => (
-                                        <Draggable
-                                            key={item}
-                                            draggableId={item}
-                                            index={index}>
-                                            {(provided, snapshot) => (
-                                                <div
-                                                    ref={provided.innerRef}
-                                                    {...provided.draggableProps}
-                                                    {...provided.dragHandleProps}
-                                                    style={getItemStyle(
-                                                        snapshot.isDragging,
-                                                        provided.draggableProps.style
-                                                    )}>
-                                                    {item.split('-').join(' ')}
-                                                </div>
-                                            )}    
-                                        </Draggable>
-                                    ))}
-                                </DroppableLocation>
-                            ))}
+                            {
+                              Object.keys(LOCATIONS).map(
+                                (region) => (
+                                  <div style={
+                                    {
+                                      display: 'flex',
+                                      flexWrap: 'wrap',
+                                      flexDirection: "column",
+                                      alignItems: "center",
+                                      width: '20%',
+                                      backgroundColor: REGION_COLORS[region][0],
+                                      color: (region === "Bosses" || region === "Lake Hylia" ? 'white' : 'black'),
+                                      margin: "5px 5px 5px 5px",
+                                      border: "10px solid black"
+                                    }
+                                  }> <h1>{region}</h1>
+                                  {Object.keys(LOCATIONS[region]).map(
+                                    (area) => (
+                                      <div style={
+                                        {
+                                          width: '90%',
+                                          margin: "10px",
+                                          display: 'flex',
+                                          justifyContent: 'center',
+                                          flexDirection: "column",
+                                          alignItems: "center",
+                                          paddingBottom: '15px',
+                                          backgroundColor: REGION_COLORS[region][1],
+                                          color: 'inherit',
+                                        }
+                                      }>
+                                      <h2 style={
+                                        {
+                                          textAlign: 'center',
+                                        }
+                                      }>{area}</h2>
+                                      {Object.keys(LOCATIONS[region][area]).map(
+                                        (location) => (
+                                          <DroppableLocation
+                                            key={LOCATIONS[region][area][location]}
+                                            droppableId={LOCATIONS[region][area][location]}
+                                            name={LOCATIONS[region][area][location].split('-').join(' ')}
+                                            style={{}}
+                                            isDropDisabled={this.state[LOCATIONS[region][area][location]].length > 0}>
+                                            {this.state[LOCATIONS[region][area][location]].map((item, index) => (
+                                                <Draggable
+                                                    key={item}
+                                                    draggableId={item}
+                                                    index={index}>
+                                                    {(provided, snapshot) => (
+                                                        <div
+                                                            ref={provided.innerRef}
+                                                            {...provided.draggableProps}
+                                                            {...provided.dragHandleProps}
+                                                            style={getItemStyle(
+                                                                snapshot.isDragging,
+                                                                provided.draggableProps.style
+                                                            )}>
+                                                            {item.split('-').join(' ')}
+                                                        </div>
+                                                    )}
+                                                </Draggable>
+                                            ))}
+                                          </DroppableLocation>
+                                        )
+                                      )
+                                    }</div>
+                                    )
+                                  )
+                                }</div>
+                                )
+                              )
+                          }
                         </div>
                     </div>
                 </DragDropContext>

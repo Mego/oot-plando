@@ -13,9 +13,9 @@ const getListStyle = (isDraggingOver, id) => ({
 export default class DroppableLocation extends Component {
     render() {
         return (
-            <div style={{minHeight: 175, position: 'relative'}}>
+            <div style={{minHeight: 100, position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
                 <div>
-                    <div style={{fontSize: 13, fontWeight: 'bold', textAlign: 'center', wordBreak: 'break-word', maxWidth: 196}}>{this.props.name}</div>
+                    <div style={{fontSize: 13, fontWeight: 'bold', textAlign: 'center', wordBreak: 'break-word'}}>{this.props.name}</div>
                 </div>
                 <Droppable {...this.props} placeholder='Junk'>
                     {(provided, snapshot) => (
