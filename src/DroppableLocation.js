@@ -15,7 +15,7 @@ export default class DroppableLocation extends Component {
         return (
             <div style={{minHeight: 175, position: 'relative'}}>
                 <div>
-                    <div style={{fontSize: 13, fontWeight: 'bold', textAlign: 'center', wordBreak: 'break-word', maxWidth: 196}}>{this.props.name}</div>
+                    <div style={{fontSize: 13, fontWeight: 'bold', textAlign: 'center', wordBreak: 'break-word', maxWidth: 196, minHeight: 34, display: 'flex', alignItems: 'center', justifyContent:'center'}}>{this.props.name}</div>
                 </div>
                 <Droppable {...this.props} placeholder='Junk'>
                     {(provided, snapshot) => (
