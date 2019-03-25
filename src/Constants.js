@@ -133,6 +133,7 @@ export const JUNK_POOL = {
 };
 
 export const BOSSES = [
+    "Links-Pocket",
     "Queen-Gohma",
     "King-Dodongo",
     "Barinade",
@@ -142,10 +143,6 @@ export const BOSSES = [
     "Bongo-Bongo",
     "Twinrova",
 ];
-
-export const LINKS_POCKET = [
-    "Links-Pocket",
-]
 
 export const SONG_LOCATIONS = [
   "Song-from-Saria",
@@ -550,6 +547,5 @@ export const LOCATIONS = {
   "Miscellaneous":{
     'Bosses': BOSSES,
     'Songs': SONG_LOCATIONS,
-    "Links Pocket": LINKS_POCKET,
   }
 };
