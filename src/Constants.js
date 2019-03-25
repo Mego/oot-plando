@@ -133,7 +133,6 @@ export const JUNK_POOL = {
 };
 
 export const BOSSES = [
-    "Links-Pocket",
     "Queen-Gohma",
     "King-Dodongo",
     "Barinade",
@@ -144,19 +143,23 @@ export const BOSSES = [
     "Twinrova",
 ];
 
+export const LINKS_POCKET = [
+    "Links-Pocket",
+]
+
 export const SONG_LOCATIONS = [
   "Song-from-Saria",
-  "Sheik-Forest-Song",
   "Song-from-Ocarina-of-Time",
-  "Sheik-at-Colossus",
-  "Sheik-at-Temple",
-  "Impa-at-Castle",
-  "Sheik-in-Kakariko",
   "Song-at-Windmill",
   "Song-from-Composer-Grave",
-  "Sheik-in-Crater",
   "Song-from-Malon",
+  "Impa-at-Castle",
+  "Sheik-at-Temple",
+  "Sheik-Forest-Song",
+  "Sheik-in-Crater",
   "Sheik-in-Ice-Cavern",
+  "Sheik-in-Kakariko",
+  "Sheik-at-Colossus",
 ];
 
 export const KOKIRI_FOREST = [
@@ -498,36 +501,55 @@ export const SPIRIT_TEMPLE = [
 ];
 
 export const LOCATIONS = {
-  'Bosses': BOSSES,
-  'Songs': SONG_LOCATIONS,
-  'Kokiri Forest': KOKIRI_FOREST,
-  'Lost Woods': LOST_WOODS,
-  'Sacred Forest Meadow': SACRED_FOREST_MEADOW,
-  'Hyrule Field': HYRULE_FIELD,
-  'Lake Hylia': LAKE_HYLIA,
-  'Gerudo Valley': GERUDO_VALLEY,
-  'Gerudo Fortress': GERUDO_FORTRESS,
-  'Wasteland': WASTELAND,
-  'Desert Colossus': DESERT_COLOSSUS,
-  'Market': MARKET,
-  'Hyrule Castle': HYRULE_CASTLE,
-  'Ganons Castle': GANONS_CASTLE,
-  'Kakariko Village': KAKARIKO_VILLAGE,
-  'Death Mountain Trail': DEATH_MOUNTAIN_TRAIL,
-  'Goron City': GORON_CITY,
-  'Death Mountain Crater': DEATH_MOUNTAIN_CRATER,
-  'Zoras River': ZORAS_RIVER,
-  'Zoras Domain': ZORAS_DOMAIN,
-  'Lon Lon Ranch': LON_LON_RANCH,
-  'Deku Tree': DEKU_TREE,
-  'Dodongos Cavern': DODONGOS_CAVERN,
-  'Jabu Jabus Belly': JABU_JABUS_BELLY,
-  'Forest Temple': FOREST_TEMPLE,
-  'Bottom of the Well': BOTTOM_OF_THE_WELL,
-  'Fire Temple': FIRE_TEMPLE,
-  'Ice Cavern': ICE_CAVERN,
-  'Water Temple': WATER_TEMPLE,
-  'Shadow Temple': SHADOW_TEMPLE,
-  'Gerudo Training Grounds': GERUDO_TRAINING_GROUNDS,
-  'Spirit Temple': SPIRIT_TEMPLE
+  "The Forest":{
+    'Kokiri Forest': KOKIRI_FOREST,
+    'Lost Woods': LOST_WOODS,
+    'Deku Tree': DEKU_TREE,
+    'Sacred Forest Meadow': SACRED_FOREST_MEADOW,
+    'Forest Temple': FOREST_TEMPLE,
+  },
+  "Zora's Domain":{
+    'Zoras River': ZORAS_RIVER,
+    'Zoras Domain': ZORAS_DOMAIN,
+    'Jabu Jabus Belly': JABU_JABUS_BELLY,
+    'Ice Cavern': ICE_CAVERN,
+  },
+  "Death Mountain":{
+    'Death Mountain Trail': DEATH_MOUNTAIN_TRAIL,
+    'Goron City': GORON_CITY,
+    'Dodongos Cavern': DODONGOS_CAVERN,
+    'Death Mountain Crater': DEATH_MOUNTAIN_CRATER,
+    'Fire Temple': FIRE_TEMPLE,
+  },
+  "Hyrule Field":{
+    'Hyrule Field': HYRULE_FIELD,
+    'Lon Lon Ranch': LON_LON_RANCH,
+  },
+  "Hyrule Castle":{
+    'Market': MARKET,
+    'Hyrule Castle': HYRULE_CASTLE,
+    'Ganons Castle': GANONS_CASTLE,
+  },
+  "Kakariko":{
+    'Kakariko Village': KAKARIKO_VILLAGE,
+    'Bottom of the Well': BOTTOM_OF_THE_WELL,
+    'Shadow Temple': SHADOW_TEMPLE,
+  },
+  "Lake Hylia":{
+    'Lake Hylia': LAKE_HYLIA,
+    'Water Temple': WATER_TEMPLE,
+  },
+  "The Desert":{
+    'Gerudo Valley': GERUDO_VALLEY,
+    'Gerudo Fortress': GERUDO_FORTRESS,
+    'Gerudo Training Grounds': GERUDO_TRAINING_GROUNDS,
+    'Wasteland': WASTELAND,
+    'Desert Colossus': DESERT_COLOSSUS,
+    'Spirit Temple': SPIRIT_TEMPLE
+  },
+  "Miscellaneous":{
+    'Bosses': BOSSES,
+    'Songs': SONG_LOCATIONS,
+    "Links Pocket": LINKS_POCKET,
+  }
 };
