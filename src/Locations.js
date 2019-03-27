@@ -206,20 +206,21 @@ export default class Locations extends Component {
                         }>
                             <Tabs>
                                 <TabList>
-                                {Object.keys(LOCATIONS).map(locationName => (
-                                    <Tab key={locationName.split(' ').join('-')}>{locationName}</Tab>
+                                {Object.entries(LOCATIONS).map(locationName => (
+                                    <Tab key={locationName[0].split(' ').join('-')}>{locationName[0]}</Tab>
                                 ))}
                                 </TabList>
                                 {
                                   Object.keys(LOCATIONS).map((locationGroup) => (
                                     <TabPanel>
+                                      <h1>{locationGroup}</h1>
                                       <Tabs>
                                         <TabList>
                                           {Object.keys(LOCATIONS[locationGroup]).map((locationName) =>(
-                                            <Tab>{locationName}</Tab>
+                                            <Tab key={locationName.split(' ').join('-')}>{locationName}</Tab>
                                           ))}
                                         </TabList>
-                                          {Object.keys(LOCATIONS[locationGroup]).map((locationName) => (
+                                          {Object.entries(LOCATIONS[locationGroup]).map((locationName) => (
                                             <TabPanel>
                                                   <div style={{
                                                       display: 'flex',
@@ -228,15 +229,15 @@ export default class Locations extends Component {
                                                       maxHeight: '75vh',
                                                       overflowY: 'auto'
                                                   }}>
-                                                  {Object.keys(LOCATIONS[locationGroup][locationName]).map((location) => (
+                                                  {Object.values(locationName[1]).map((location) => (
                                                     <DroppableLocation
-                                                      key={LOCATIONS[locationGroup][locationName][location]}
-                                                      droppableId={LOCATIONS[locationGroup][locationName][location]}
-                                                      name={LOCATIONS[locationGroup][locationName][location].split('-').join(' ')}
+                                                      key={location}
+                                                      droppableId={location}
+                                                      name={location.split('-').join(' ')}
                                                       style={{flex: 1}}
-                                                      isDropDisabled={this.state[LOCATIONS[locationGroup][locationName][location]].length > 0}>
+                                                      isDropDisabled={this.state[location].length > 0}>
 
-                                                      {this.state[LOCATIONS[locationGroup][locationName][location]].map((item, index) => (
+                                                      {this.state[location].map((item, index) => (
                                                           <Draggable
                                                               key={item}
                                                               draggableId={item}
