@@ -206,8 +206,8 @@ export default class Locations extends Component {
                         }>
                             <Tabs>
                                 <TabList>
-                                {Object.entries(LOCATIONS).map(locationName => (
-                                    <Tab key={locationName[0].split(' ').join('-')}>{locationName[0]}</Tab>
+                                {Object.keys(LOCATIONS).map(locationName => (
+                                    <Tab key={locationName[0].split(' ').join('-')}>{locationName}</Tab>
                                 ))}
                                 </TabList>
                                 {
@@ -220,7 +220,7 @@ export default class Locations extends Component {
                                             <Tab key={locationName.split(' ').join('-')}>{locationName}</Tab>
                                           ))}
                                         </TabList>
-                                          {Object.entries(LOCATIONS[locationGroup]).map((locationName) => (
+                                          {Object.entries(LOCATIONS[locationGroup]).map(([locationName, locationArray]) => (
                                             <TabPanel>
                                                   <div style={{
                                                       display: 'flex',
@@ -229,7 +229,7 @@ export default class Locations extends Component {
                                                       maxHeight: '75vh',
                                                       overflowY: 'auto'
                                                   }}>
-                                                  {Object.values(locationName[1]).map((location) => (
+                                                  {locationArray.map((location) => (
                                                     <DroppableLocation
                                                       key={location}
                                                       droppableId={location}
