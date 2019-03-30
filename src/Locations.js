@@ -167,12 +167,12 @@ export default class Locations extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{display: 'inline-block', width: "100%"}}>
                 <button style={{float: 'right'}} type='button' name='reset' onClick={this.reset}>Reset</button>
                 <button style={{float: 'right'}} type='button' name='export' onClick={this.export}>Export</button>
                 <DragDropContext onDragEnd={this.onDragEnd}>
-                    <div style={{display: 'inline-block', width: "67%"}}>
-                        <div style={{display: 'inline-block', marginLeft: '20px', maxHeight: '95vh', overflowY: 'auto'}}>
+                    <div style={{display: 'inline-block', width: "100%"}}>
+                        <div style={{display: 'inline-block', marginLeft: '20px', maxHeight: '95vh', overflowY: 'auto', float: 'left', width: '225px'}}>
                             <DroppableLocation
                                 key='unassigned'
                                 droppableId='unassigned'
@@ -200,8 +200,9 @@ export default class Locations extends Component {
                         </div>
                         <div style={
                             {
-                                width: '80%',
-                                float: 'right'
+                                width: 'calc(100% - 300px)',
+                                float: 'left',
+                                marginLeft: '20px',
                             }
                         }>
                             <Tabs>
