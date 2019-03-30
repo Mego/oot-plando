@@ -342,7 +342,6 @@ export const ZORAS_RIVER = [
     "Zora-River-Lower-Freestanding-PoH",
     "Zora-River-Upper-Freestanding-PoH",
     "Zora-River-Plateau-Open-Grotto-Chest",
-    "Magic-Bean-Salesman",
 ];
 
 export const ZORAS_DOMAIN = [
@@ -352,7 +351,6 @@ export const ZORAS_DOMAIN = [
     "Zoras-Fountain-Iceberg-Freestanding-PoH",
     "Zoras-Fountain-Bottom-Freestanding-PoH",
     "Zoras-Fountain-Fairy-Reward",
-    "King-Zora-Moves",
 ];
 
 export const LON_LON_RANCH = [
@@ -1110,7 +1108,6 @@ export const OTHER = [
   "Epona",
   "Spirit-Temple-Nut-Crate",
   "Gerudo-Fortress-Carpenter-Rescue",
-  "Ganon",
 ];
 
 export const LOCATIONS = {
