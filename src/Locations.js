@@ -206,8 +206,8 @@ export default class Locations extends Component {
                         }>
                             <Tabs>
                                 <TabList>
-                                {Object.keys(LOCATIONS).map(locationName => (
-                                    <Tab key={locationName[0].split(' ').join('-')}>{locationName}</Tab>
+                                {Object.keys(LOCATIONS).map(locationGroup => (
+                                    <Tab key={locationGroup.split(' ').join('-')}>{locationGroup}</Tab>
                                 ))}
                                 </TabList>
                                 {
