@@ -132,7 +132,7 @@ export const JUNK_POOL = {
   "Rupees (50)": 7
 };
 
-export const BOSSES = [
+export const PRIZES = [
     "Links-Pocket",
     "Queen-Gohma",
     "King-Dodongo",
@@ -1158,7 +1158,7 @@ export const LOCATIONS = {
     'Spirit Temple': SPIRIT_TEMPLE
   },
   "Miscellaneous":{
-    'Bosses': BOSSES,
+    'Prizes': PRIZES,
     'Songs': SONG_LOCATIONS,
     "Pots": POTS,
     "Enemies": ENEMIES,
