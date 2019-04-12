@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "13a72fd150496fff49b1",
+    "revision": "93a57ef572297cce9b3b",
     "url": "/oot-plando/static/css/main.2c08f2e9.chunk.css"
   },
   {
-    "revision": "13a72fd150496fff49b1",
-    "url": "/oot-plando/static/js/main.34b7db22.chunk.js"
+    "revision": "93a57ef572297cce9b3b",
+    "url": "/oot-plando/static/js/main.f86e5f3b.chunk.js"
   },
   {
     "revision": "64cf1a6a085a6105d1af",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/oot-plando/static/js/2.172cbf5f.chunk.js"
   },
   {
-    "revision": "5379ba849fa474d603fb351339de9226",
+    "revision": "0a09134f78e6bc16fde28f33e893982c",
     "url": "/oot-plando/index.html"
   }
 ];
