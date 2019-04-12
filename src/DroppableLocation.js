@@ -13,7 +13,7 @@ const getListStyle = (isDraggingOver, id) => ({
 export default class DroppableLocation extends Component {
     render() {
         return (
-            <div style={{minHeight: 175, position: 'relative'}}>
+            <div style={{padding: 1, minHeight: 175, position: 'relative'}}>
                 <div>
                     <div style={{fontSize: 13, fontWeight: 'bold', textAlign: 'center', wordBreak: 'break-word', maxWidth: 196, minHeight: 34, display: 'flex', alignItems: 'center', justifyContent:'center'}}>{this.props.name}</div>
                 </div>
