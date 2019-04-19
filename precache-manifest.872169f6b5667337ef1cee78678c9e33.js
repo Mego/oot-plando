@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/oot-plando/static/js/2.172cbf5f.chunk.js"
   },
   {
-    "revision": "d43ec9d67822c1ef7065101abbe33d09",
+    "revision": "61591b8bfc9682c07b55c700faf7bf5d",
     "url": "/oot-plando/index.html"
   }
 ];
