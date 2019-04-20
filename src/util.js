@@ -1,0 +1,7 @@
+export function arrayRepeat(item, count = 1, transform = (x, c, t) => x) {
+  const arr = [];
+  for (let i = 1; i <= count; ++i) {
+    arr.push(transform(item, i, count));
+  }
+  return arr;
+}
