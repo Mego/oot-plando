@@ -8,7 +8,7 @@ export const STONES_AND_MEDALLIONS = [
   'Water-Medallion',
   'Shadow-Medallion',
   'Spirit-Medallion',
-];
+]
 
 export const SONGS = [
   'Bolero-of-Fire',
@@ -24,7 +24,7 @@ export const SONGS = [
   'Song-of-Time',
   'Suns-Song',
   'Zeldas-Lullaby',
-];
+]
 
 export const MAJOR_ITEMS = [
   'Biggoron-Sword',
@@ -67,7 +67,7 @@ export const MAJOR_ITEMS = [
   'Stone-of-Agony',
   'Weird-Egg',
   'Zora-Tunic',
-];
+]
 
 export const JUNK = [
   'Arrows-(10)',
@@ -89,9 +89,9 @@ export const JUNK = [
   'Rupees-(200)',
   'Rupees-(5)',
   'Rupees-(50)',
-];
+]
 
-export const ITEMS = [...STONES_AND_MEDALLIONS, ...SONGS, ...MAJOR_ITEMS];
+export const ITEMS = [...STONES_AND_MEDALLIONS, ...SONGS, ...MAJOR_ITEMS]
 
 export const ITEM_COPIES = {
   Bow: 3,
@@ -106,7 +106,7 @@ export const ITEM_COPIES = {
   'Progressive-Strength-Upgrade': 3,
   'Progressive-Wallet': 2,
   Slingshot: 3,
-};
+}
 
 export const JUNK_POOL = {
   'Arrows (10)': 8,
@@ -130,7 +130,7 @@ export const JUNK_POOL = {
   'Rupees (200)': 6,
   'Rupees (5)': 19,
   'Rupees (50)': 7,
-};
+}
 
 export const PRIZES = [
   'Links-Pocket',
@@ -142,7 +142,7 @@ export const PRIZES = [
   'Morpha',
   'Bongo-Bongo',
   'Twinrova',
-];
+]
 
 export const SONG_LOCATIONS = [
   'Song-from-Saria',
@@ -157,7 +157,7 @@ export const SONG_LOCATIONS = [
   'Sheik-in-Ice-Cavern',
   'Sheik-in-Kakariko',
   'Sheik-at-Colossus',
-];
+]
 
 export const KOKIRI_FOREST = [
   'Kokiri-Sword-Chest',
@@ -167,7 +167,7 @@ export const KOKIRI_FOREST = [
   'Mido-Chest-Bottom-Right',
   'Gift-from-Saria',
   'Kokiri-Forest-Storms-Grotto-Chest',
-];
+]
 
 export const LOST_WOODS = [
   'Skull-Kid',
@@ -178,9 +178,9 @@ export const LOST_WOODS = [
   'Deku-Theater-Skull-Mask',
   'Deku-Theater-Mask-of-Truth',
   'LW-Grotto-Deku-Scrub-Deku-Nut-Upgrade',
-];
+]
 
-export const SACRED_FOREST_MEADOW = ['Wolfos-Grotto-Chest'];
+export const SACRED_FOREST_MEADOW = ['Wolfos-Grotto-Chest']
 
 export const HYRULE_FIELD = [
   'Ocarina-of-Time',
@@ -189,7 +189,7 @@ export const HYRULE_FIELD = [
   'HF-Grotto-Deku-Scrub-Piece-of-Heart',
   'Field-West-Castle-Town-Grotto-Chest',
   'Tektite-Grotto-Freestanding-PoH',
-];
+]
 
 export const LAKE_HYLIA = [
   'Underwater-Bottle',
@@ -198,13 +198,13 @@ export const LAKE_HYLIA = [
   'Diving-in-the-Lab',
   'Child-Fishing',
   'Adult-Fishing',
-];
+]
 
 export const GERUDO_VALLEY = [
   'Gerudo-Valley-Waterfall-Freestanding-PoH',
   'Gerudo-Valley-Crate-Freestanding-PoH',
   'Gerudo-Valley-Hammer-Rocks-Chest',
-];
+]
 
 export const GERUDO_FORTRESS = [
   'Gerudo-Fortress-Rooftop-Chest',
@@ -215,17 +215,17 @@ export const GERUDO_FORTRESS = [
   'Gerudo-Fortress-North-F2-Carpenter',
   'Gerudo-Fortress-South-F1-Carpenter',
   'Gerudo-Fortress-South-F2-Carpenter',
-];
+]
 
 export const WASTELAND = [
   'Haunted-Wasteland-Structure-Chest',
   'Haunted-Wasteland-Bombchu-Salesman',
-];
+]
 
 export const DESERT_COLOSSUS = [
   'Colossus-Freestanding-PoH',
   'Desert-Colossus-Fairy-Reward',
-];
+]
 
 export const MARKET = [
   'Zelda',
@@ -236,13 +236,13 @@ export const MARKET = [
   'Treasure-Chest-Game',
   'Dog-Lady',
   'Master-Sword-Pedestal',
-];
+]
 
 export const HYRULE_CASTLE = [
   'Malon-Egg',
   'Hyrule-Castle-Fairy-Reward',
   'Zeldas-Letter',
-];
+]
 
 export const GANONS_CASTLE = [
   'Ganons-Castle-Fairy-Reward',
@@ -268,7 +268,7 @@ export const GANONS_CASTLE = [
   'Ganons-Castle-Shadow-Trial-Clear',
   'Ganons-Castle-Spirit-Trial-Clear',
   'Ganons-Castle-Light-Trial-Clear',
-];
+]
 
 export const GANONS_CASTLE_MQ = [
   'Ganons-Castle-MQ-Water-Trial-Chest',
@@ -284,7 +284,7 @@ export const GANONS_CASTLE_MQ = [
   'Ganons-Castle-MQ-Spirit-Trial-First-Chest',
   'Ganons-Castle-MQ-Spirit-Trial-Second-Chest',
   'Ganons-Castle-MQ-Forest-Trial-Freestanding-Key',
-];
+]
 
 export const KAKARIKO_VILLAGE = [
   'Man-on-Roof',
@@ -307,7 +307,7 @@ export const KAKARIKO_VILLAGE = [
   'Dampe-Race-Freestanding-PoH',
   'Redead-Grotto-Chest',
   'Kakariko-Back-Grotto-Chest',
-];
+]
 
 export const DEATH_MOUNTAIN_TRAIL = [
   'Death-Mountain-Bombable-Chest',
@@ -315,7 +315,7 @@ export const DEATH_MOUNTAIN_TRAIL = [
   'Biggoron',
   'Mountain-Summit-Fairy-Reward',
   'Mountain-Storms-Grotto-Chest',
-];
+]
 
 export const GORON_CITY = [
   'Goron-City-Leftmost-Maze-Chest',
@@ -325,14 +325,14 @@ export const GORON_CITY = [
   'Rolling-Goron-as-Child',
   'Link-the-Goron',
   'Darunias-Joy',
-];
+]
 
 export const DEATH_MOUNTAIN_CRATER = [
   'DM-Crater-Wall-Freestanding-PoH',
   'DM-Crater-Volcano-Freestanding-PoH',
   'Crater-Fairy-Reward',
   'Top-of-Crater-Grotto-Chest',
-];
+]
 
 export const ZORAS_RIVER = [
   'Frog-Ocarina-Game',
@@ -340,7 +340,7 @@ export const ZORAS_RIVER = [
   'Zora-River-Lower-Freestanding-PoH',
   'Zora-River-Upper-Freestanding-PoH',
   'Zora-River-Plateau-Open-Grotto-Chest',
-];
+]
 
 export const ZORAS_DOMAIN = [
   'Diving-Minigame',
@@ -349,12 +349,12 @@ export const ZORAS_DOMAIN = [
   'Zoras-Fountain-Iceberg-Freestanding-PoH',
   'Zoras-Fountain-Bottom-Freestanding-PoH',
   'Zoras-Fountain-Fairy-Reward',
-];
+]
 
 export const LON_LON_RANCH = [
   'Talons-Chickens',
   'Lon-Lon-Tower-Freestanding-PoH',
-];
+]
 
 export const DEKU_TREE = [
   'Deku-Tree-Lobby-Chest',
@@ -364,7 +364,7 @@ export const DEKU_TREE = [
   'Deku-Tree-Slingshot-Chest',
   'Deku-Tree-Slingshot-Room-Side-Chest',
   'Queen-Gohma-Heart',
-];
+]
 
 export const DEKU_TREE_MQ = [
   'Deku-Tree-MQ-Lobby-Chest',
@@ -375,7 +375,7 @@ export const DEKU_TREE_MQ = [
   'Deku-Tree-MQ-Before-Spinning-Log-Chest',
   'Deku-Tree-MQ-After-Spinning-Log-Chest',
   'Queen-Gohma-Heart',
-];
+]
 
 export const DODONGOS_CAVERN = [
   'Dodongos-Cavern-Map-Chest',
@@ -385,7 +385,7 @@ export const DODONGOS_CAVERN = [
   'Dodongos-Cavern-End-of-Bridge-Chest',
   'Chest-Above-King-Dodongo',
   'King-Dodongo-Heart',
-];
+]
 
 export const DODONGOS_CAVERN_MQ = [
   'Dodongos-Cavern-MQ-Map-Chest',
@@ -395,14 +395,14 @@ export const DODONGOS_CAVERN_MQ = [
   'Dodongos-Cavern-MQ-Torch-Puzzle-Room-Chest',
   'Dodongos-Cavern-MQ-Under-Grave-Chest',
   'King-Dodongo-Heart',
-];
+]
 
 export const JABU_JABUS_BELLY = [
   'Boomerang-Chest',
   'Jabu-Jabus-Belly-Map-Chest',
   'Jabu-Jabus-Belly-Compass-Chest',
   'Barinade-Heart',
-];
+]
 
 export const JABU_JABUS_BELLY_MQ = [
   'Jabu-Jabus-Belly-MQ-Entry-Side-Chest',
@@ -417,7 +417,7 @@ export const JABU_JABUS_BELLY_MQ = [
   'Jabu-Jabus-Belly-MQ-Boomerang-Room-Small-Chest',
   'MQ-Boomerang-Chest',
   'Barinade-Heart',
-];
+]
 
 export const FOREST_TEMPLE = [
   'Forest-Temple-First-Chest',
@@ -434,7 +434,7 @@ export const FOREST_TEMPLE = [
   'Forest-Temple-Blue-Poe-Chest',
   'Forest-Temple-Near-Boss-Chest',
   'Phantom-Ganon-Heart',
-];
+]
 
 export const FOREST_TEMPLE_MQ = [
   'Forest-Temple-MQ-First-Chest',
@@ -450,7 +450,7 @@ export const FOREST_TEMPLE_MQ = [
   'Forest-Temple-MQ-Redead-Chest',
   'Forest-Temple-MQ-Boss-Key-Chest',
   'Phantom-Ganon-Heart',
-];
+]
 
 export const BOTTOM_OF_THE_WELL = [
   'Bottom-of-the-Well-Front-Left-Hidden-Wall',
@@ -467,7 +467,7 @@ export const BOTTOM_OF_THE_WELL = [
   'Bottom-of-the-Well-Basement-Chest',
   'Bottom-of-the-Well-Locked-Pits',
   'Bottom-of-the-Well-Behind-Right-Grate',
-];
+]
 
 export const BOTTOM_OF_THE_WELL_MQ = [
   'Bottom-of-the-Well-MQ-Map-Chest',
@@ -475,7 +475,7 @@ export const BOTTOM_OF_THE_WELL_MQ = [
   'Bottom-of-the-Well-MQ-Compass-Chest',
   'Bottom-of-the-Well-MQ-Dead-Hand-Freestanding-Key',
   'Bottom-of-the-Well-MQ-East-Inner-Room-Freestanding-Key',
-];
+]
 
 export const FIRE_TEMPLE = [
   'Fire-Temple-Chest-Near-Boss',
@@ -493,7 +493,7 @@ export const FIRE_TEMPLE = [
   'Fire-Temple-Compass-Chest',
   'Fire-Temple-Highest-Goron-Chest',
   'Fire-Temple-Megaton-Hammer-Chest',
-];
+]
 
 export const FIRE_TEMPLE_MQ = [
   'Fire-Temple-MQ-Chest-Near-Boss',
@@ -509,21 +509,21 @@ export const FIRE_TEMPLE_MQ = [
   'Fire-Temple-MQ-Maze-Side-Room',
   'Fire-Temple-MQ-Freestanding-Key',
   'Volvagia-Heart',
-];
+]
 
 export const ICE_CAVERN = [
   'Ice-Cavern-Map-Chest',
   'Ice-Cavern-Compass-Chest',
   'Ice-Cavern-Iron-Boots-Chest',
   'Ice-Cavern-Freestanding-PoH',
-];
+]
 
 export const ICE_CAVERN_MQ = [
   'Ice-Cavern-MQ-Iron-Boots-Chest',
   'Ice-Cavern-MQ-Compass-Chest',
   'Ice-Cavern-MQ-Map-Chest',
   'Ice-Cavern-MQ-Freestanding-PoH',
-];
+]
 
 export const WATER_TEMPLE = [
   'Morpha-Heart',
@@ -537,7 +537,7 @@ export const WATER_TEMPLE = [
   'Water-Temple-Central-Pillar-Chest',
   'Water-Temple-Dark-Link-Chest',
   'Water-Temple-River-Chest',
-];
+]
 
 export const WATER_TEMPLE_MQ = [
   'Water-Temple-MQ-Central-Pillar-Chest',
@@ -547,7 +547,7 @@ export const WATER_TEMPLE_MQ = [
   'Water-Temple-MQ-Map-Chest',
   'Water-Temple-MQ-Freestanding-Key',
   'Morpha-Heart',
-];
+]
 
 export const SHADOW_TEMPLE = [
   'Shadow-Temple-Map-Chest',
@@ -568,7 +568,7 @@ export const SHADOW_TEMPLE = [
   'Shadow-Temple-Boss-Key-Chest',
   'Shadow-Temple-Hidden-Floormaster-Chest',
   'Bongo-Bongo-Heart',
-];
+]
 
 export const SHADOW_TEMPLE_MQ = [
   'Shadow-Temple-MQ-Compass-Chest',
@@ -592,7 +592,7 @@ export const SHADOW_TEMPLE_MQ = [
   'Shadow-Temple-MQ-Near-Ship-Invisible-Chest',
   'Shadow-Temple-MQ-Freestanding-Key',
   'Bongo-Bongo-Heart',
-];
+]
 
 export const GERUDO_TRAINING_GROUNDS = [
   'Gerudo-Training-Grounds-Lobby-Left-Chest',
@@ -617,7 +617,7 @@ export const GERUDO_TRAINING_GROUNDS = [
   'Gerudo-Training-Grounds-Heavy-Block-Second-Chest',
   'Gerudo-Training-Grounds-Heavy-Block-Third-Chest',
   'Gerudo-Training-Grounds-Heavy-Block-Fourth-Chest',
-];
+]
 
 export const GERUDO_TRAINING_GROUNDS_MQ = [
   'Gerudo-Training-Grounds-MQ-Lobby-Right-Chest',
@@ -637,7 +637,7 @@ export const GERUDO_TRAINING_GROUNDS_MQ = [
   'Gerudo-Training-Grounds-MQ-Hidden-Ceiling-Chest',
   'Gerudo-Training-Grounds-MQ-Underwater-Silver-Rupee-Chest',
   'Gerudo-Training-Grounds-MQ-Heavy-Block-Chest',
-];
+]
 
 export const SPIRIT_TEMPLE = [
   'Spirit-Temple-Child-Left-Chest',
@@ -660,7 +660,7 @@ export const SPIRIT_TEMPLE = [
   'Spirit-Temple-Boss-Key-Chest',
   'Spirit-Temple-Topmost-Chest',
   'Twinrova-Heart',
-];
+]
 
 export const SPIRIT_TEMPLE_MQ = [
   'Spirit-Temple-MQ-Entrance-Front-Left-Chest',
@@ -684,21 +684,21 @@ export const SPIRIT_TEMPLE_MQ = [
   'Spirit-Temple-MQ-Boss-Key-Chest',
   'Spirit-Temple-MQ-Mirror-Puzzle-Invisible-Chest',
   'Twinrova-Heart',
-];
+]
 
 export const GS_DEKU_TREE = [
   'GS-Deku-Tree-Basement-Back-Room',
   'GS-Deku-Tree-Basement-Gate',
   'GS-Deku-Tree-Basement-Vines',
   'GS-Deku-Tree-Compass-Room',
-];
+]
 
 export const GS_DEKU_TREE_MQ = [
   'GS-Deku-Tree-MQ-Lobby',
   'GS-Deku-Tree-MQ-Compass-Room',
   'GS-Deku-Tree-MQ-Basement-Ceiling',
   'GS-Deku-Tree-MQ-Basement-Back-Room',
-];
+]
 
 export const GS_DODONGOS = [
   "GS-Dodongo's-Cavern-Vines-Above-Stairs",
@@ -706,7 +706,7 @@ export const GS_DODONGOS = [
   "GS-Dodongo's-Cavern-Alcove-Above-Stairs",
   "GS-Dodongo's-Cavern-Back-Room",
   "GS-Dodongo's-Cavern-East-Side-Room",
-];
+]
 
 export const GS_DODONGOS_MQ = [
   "GS-Dodongo's-Cavern-MQ-Scrub-Room",
@@ -714,21 +714,21 @@ export const GS_DODONGOS_MQ = [
   "GS-Dodongo's-Cavern-MQ-Lizalfos-Room",
   "GS-Dodongo's-Cavern-MQ-Larva-Room",
   "GS-Dodongo's-Cavern-MQ-Back-Area",
-];
+]
 
 export const GS_JABU_JABU = [
   'GS-Jabu-Jabu-Lobby-Basement-Lower',
   'GS-Jabu-Jabu-Lobby-Basement-Upper',
   'GS-Jabu-Jabu-Near-Boss',
   'GS-Jabu-Jabu-Water-Switch-Room',
-];
+]
 
 export const GS_JABU_JABU_MQ = [
   'GS-Jabu-Jabu-MQ-Tailpasaran-Room',
   'GS-Jabu-Jabu-MQ-Invisible-Enemies-Room',
   'GS-Jabu-Jabu-MQ-Boomerang-Room',
   'GS-Jabu-Jabu-MQ-Near-Boss',
-];
+]
 
 export const GS_FOREST_TEMPLE = [
   'GS-Forest-Temple-Outdoor-East',
@@ -736,7 +736,7 @@ export const GS_FOREST_TEMPLE = [
   'GS-Forest-Temple-Outdoor-West',
   'GS-Forest-Temple-Lobby',
   'GS-Forest-Temple-Basement',
-];
+]
 
 export const GS_FOREST_TEMPLE_MQ = [
   'GS-Forest-Temple-MQ-First-Hallway',
@@ -744,7 +744,7 @@ export const GS_FOREST_TEMPLE_MQ = [
   'GS-Forest-Temple-MQ-Outdoor-East',
   'GS-Forest-Temple-MQ-Outdoor-West',
   'GS-Forest-Temple-MQ-Well',
-];
+]
 
 export const GS_FIRE_TEMPLE = [
   'GS-Fire-Temple-Song-of-Time-Room',
@@ -752,7 +752,7 @@ export const GS_FIRE_TEMPLE = [
   'GS-Fire-Temple-Unmarked-Bomb-Wall',
   'GS-Fire-Temple-East-Tower-Top',
   'GS-Fire-Temple-East-Tower-Climb',
-];
+]
 
 export const GS_FIRE_TEMPLE_MQ = [
   'GS-Fire-Temple-MQ-Above-Fire-Wall-Maze',
@@ -760,7 +760,7 @@ export const GS_FIRE_TEMPLE_MQ = [
   'GS-Fire-Temple-MQ-Big-Lava-Room',
   'GS-Fire-Temple-MQ-Fire-Wall-Maze-Side-Room',
   'GS-Fire-Temple-MQ-East-Tower-Top',
-];
+]
 
 export const GS_WATER_TEMPLE = [
   'GS-Water-Temple-South-Basement',
@@ -768,7 +768,7 @@ export const GS_WATER_TEMPLE = [
   'GS-Water-Temple-Central-Room',
   'GS-Water-Temple-Near-Boss-Key-Chest',
   'GS-Water-Temple-Serpent-River',
-];
+]
 
 export const GS_WATER_TEMPLE_MQ = [
   'GS-Water-Temple-MQ-Before-Upper-Water-Switch',
@@ -776,7 +776,7 @@ export const GS_WATER_TEMPLE_MQ = [
   'GS-Water-Temple-MQ-Lizalfos-Hallway',
   'GS-Water-Temple-MQ-Serpent-River',
   'GS-Water-Temple-MQ-South-Basement',
-];
+]
 
 export const GS_SPIRIT_TEMPLE = [
   'GS-Spirit-Temple-Hall-to-West-Iron-Knuckle',
@@ -784,7 +784,7 @@ export const GS_SPIRIT_TEMPLE = [
   'GS-Spirit-Temple-Lobby',
   'GS-Spirit-Temple-Bomb-for-Light-Room',
   'GS-Spirit-Temple-Metal-Fence',
-];
+]
 
 export const GS_SPIRIT_TEMPLE_MQ = [
   'GS-Spirit-Temple-MQ-Lower-Adult-Right',
@@ -792,7 +792,7 @@ export const GS_SPIRIT_TEMPLE_MQ = [
   'GS-Spirit-Temple-MQ-Iron-Knuckle-West',
   'GS-Spirit-Temple-MQ-Iron-Knuckle-North',
   'GS-Spirit-Temple-MQ-Sun-Block-Room',
-];
+]
 
 export const GS_SHADOW_TEMPLE = [
   'GS-Shadow-Temple-Single-Giant-Pot',
@@ -800,7 +800,7 @@ export const GS_SHADOW_TEMPLE = [
   'GS-Shadow-Temple-Triple-Giant-Pot',
   'GS-Shadow-Temple-Like-Like-Room',
   'GS-Shadow-Temple-Near-Ship',
-];
+]
 
 export const GS_SHADOW_TEMPLE_MQ = [
   'GS-Shadow-Temple-MQ-Crusher-Room',
@@ -808,31 +808,31 @@ export const GS_SHADOW_TEMPLE_MQ = [
   'GS-Shadow-Temple-MQ-After-Wind',
   'GS-Shadow-Temple-MQ-After-Ship',
   'GS-Shadow-Temple-MQ-Near-Boss',
-];
+]
 
 export const GS_BOTTOM_OF_THE_WELL = [
   'GS-Well-Like-Like-Cage',
   'GS-Well-East-Inner-Room',
   'GS-Well-West-Inner-Room',
-];
+]
 
 export const GS_BOTTOM_OF_THE_WELL_MQ = [
   'GS-Well-MQ-Basement',
   'GS-Well-MQ-Coffin-Room',
   'GS-Well-MQ-West-Inner-Room',
-];
+]
 
 export const GS_ICE_CAVERN = [
   'GS-Ice-Cavern-Push-Block-Room',
   'GS-Ice-Cavern-Spinning-Scythe-Room',
   'GS-Ice-Cavern-Heart-Piece-Room',
-];
+]
 
 export const GS_ICE_CAVERN_MQ = [
   'GS-Ice-Cavern-MQ-Scarecrow',
   'GS-Ice-Cavern-MQ-Ice-Block',
   'GS-Ice-Cavern-MQ-Red-Ice',
-];
+]
 
 export const GS_HYRULE_FIELD = [
   'GS-Hyrule-Field-Near-Gerudo-Valley',
@@ -841,7 +841,7 @@ export const GS_HYRULE_FIELD = [
   'GS-Lon-Lon-Ranch-Rain-Shed',
   'GS-Lon-Lon-Ranch-House-Window',
   'GS-Lon-Lon-Ranch-Tree',
-];
+]
 
 export const GS_KOKIRI_FOREST = [
   'GS-Kokiri-Bean-Patch',
@@ -851,14 +851,14 @@ export const GS_KOKIRI_FOREST = [
   'GS-Lost-Woods-Bean-Patch-Near-Stage',
   'GS-Lost-Woods-Above-Stage',
   'GS-Sacred-Forest-Meadow',
-];
+]
 
 export const GS_HYRULE_CASTLE = [
   "GS-Outside-Ganon's-Castle",
   'GS-Hyrule-Castle-Grotto',
   'GS-Hyrule-Castle-Tree',
   'GS-Castle-Market-Guard-House',
-];
+]
 
 export const GS_DEATH_MOUNTAIN = [
   'GS-Mountain-Crater-Bean-Patch',
@@ -869,7 +869,7 @@ export const GS_DEATH_MOUNTAIN = [
   'GS-Goron-City-Center-Platform',
   'GS-Goron-City-Boulder-Maze',
   'GS-Death-Mountain-Crater-Crate',
-];
+]
 
 export const GS_KAKARIKO = [
   'GS-Kakariko-House-Under-Construction',
@@ -880,7 +880,7 @@ export const GS_KAKARIKO = [
   "GS-Kakariko-Above-Impa's-House",
   'GS-Graveyard-Wall',
   'GS-Graveyard-Bean-Patch',
-];
+]
 
 export const GS_ZORAS_RIVER = [
   'GS-Zora-River-Ladder',
@@ -891,7 +891,7 @@ export const GS_ZORAS_RIVER = [
   "GS-Zora's-Fountain-Hidden-Cave",
   "GS-Zora's-Domain-Frozen-Waterfall",
   "GS-Zora's-Fountain-Tree",
-];
+]
 
 export const GS_LAKE_HYLIA = [
   'GS-Lake-Hylia-Bean-Patch',
@@ -899,7 +899,7 @@ export const GS_LAKE_HYLIA = [
   'GS-Lake-Hylia-Lab-Wall',
   'GS-Lab-Underwater-Crate',
   'GS-Lake-Hylia-Giant-Tree',
-];
+]
 
 export const GS_DESERT = [
   'GS-Gerudo-Valley-Bean-Patch',
@@ -912,7 +912,7 @@ export const GS_DESERT = [
   'GS-Wasteland-Ruins',
   'GS-Desert-Colossus-Hill',
   'GS-Desert-Colossus-Tree',
-];
+]
 
 export const KOKIRI_SHOP = [
   'Kokiri-Shop-Item-1',
@@ -923,7 +923,7 @@ export const KOKIRI_SHOP = [
   'Kokiri-Shop-Item-6',
   'Kokiri-Shop-Item-7',
   'Kokiri-Shop-Item-8',
-];
+]
 
 export const KAKARIKO_POTION_SHOP = [
   'Kakariko-Potion-Shop-Item-1',
@@ -934,7 +934,7 @@ export const KAKARIKO_POTION_SHOP = [
   'Kakariko-Potion-Shop-Item-6',
   'Kakariko-Potion-Shop-Item-7',
   'Kakariko-Potion-Shop-Item-8',
-];
+]
 
 export const BOMBCHU_SHOP = [
   'Bombchu-Shop-Item-1',
@@ -945,7 +945,7 @@ export const BOMBCHU_SHOP = [
   'Bombchu-Shop-Item-6',
   'Bombchu-Shop-Item-7',
   'Bombchu-Shop-Item-8',
-];
+]
 
 export const MARKET_POTION_SHOP = [
   'Castle-Town-Potion-Shop-Item-1',
@@ -956,7 +956,7 @@ export const MARKET_POTION_SHOP = [
   'Castle-Town-Potion-Shop-Item-6',
   'Castle-Town-Potion-Shop-Item-7',
   'Castle-Town-Potion-Shop-Item-8',
-];
+]
 
 export const MARKET_BAZAAR_SHOP = [
   'Castle-Town-Bazaar-Item-1',
@@ -967,7 +967,7 @@ export const MARKET_BAZAAR_SHOP = [
   'Castle-Town-Bazaar-Item-6',
   'Castle-Town-Bazaar-Item-7',
   'Castle-Town-Bazaar-Item-8',
-];
+]
 
 export const KAKARIKO_BAZAAR_SHOP = [
   'Kakariko-Bazaar-Item-1',
@@ -978,7 +978,7 @@ export const KAKARIKO_BAZAAR_SHOP = [
   'Kakariko-Bazaar-Item-6',
   'Kakariko-Bazaar-Item-7',
   'Kakariko-Bazaar-Item-8',
-];
+]
 
 export const ZORA_SHOP = [
   'Zora-Shop-Item-1',
@@ -989,7 +989,7 @@ export const ZORA_SHOP = [
   'Zora-Shop-Item-6',
   'Zora-Shop-Item-7',
   'Zora-Shop-Item-8',
-];
+]
 
 export const GORON_SHOP = [
   'Goron-Shop-Item-1',
@@ -1000,32 +1000,32 @@ export const GORON_SHOP = [
   'Goron-Shop-Item-6',
   'Goron-Shop-Item-7',
   'Goron-Shop-Item-8',
-];
+]
 
 export const DODONGOS_CAVERN_SCRUB = [
   'DC-Deku-Scrub-Deku-Nuts',
   'DC-Deku-Scrub-Deku-Sticks',
   'DC-Deku-Scrub-Deku-Seeds',
   'DC-Deku-Scrub-Deku-Shield',
-];
+]
 
-export const JABU_JABUS_BELLY_SCRUB = ['Jabu-Deku-Scrub-Deku-Nuts'];
+export const JABU_JABUS_BELLY_SCRUB = ['Jabu-Deku-Scrub-Deku-Nuts']
 
 export const GANONS_CASTLE_SCRUB = [
   'GC-Deku-Scrub-Bombs',
   'GC-Deku-Scrub-Arrows',
   'GC-Deku-Scrub-Red-Potion',
   'GC-Deku-Scrub-Green-Potion',
-];
+]
 
-export const GS_DEKU_TREE_SCRUB_MQ = ['DT-MQ-Deku-Scrub-Deku-Shield'];
+export const GS_DEKU_TREE_SCRUB_MQ = ['DT-MQ-Deku-Scrub-Deku-Shield']
 
 export const DODONGOS_CAVERN_SCRUB_MQ = [
   'DC-MQ-Deku-Scrub-Deku-Sticks',
   'DC-MQ-Deku-Scrub-Deku-Seeds',
   'DC-MQ-Deku-Scrub-Deku-Shield',
   'DC-MQ-Deku-Scrub-Red-Potion',
-];
+]
 
 export const GANONS_CASTLE_SCRUB_MQ = [
   'GC-MQ-Deku-Scrub-Deku-Nuts',
@@ -1033,73 +1033,58 @@ export const GANONS_CASTLE_SCRUB_MQ = [
   'GC-MQ-Deku-Scrub-Arrows',
   'GC-MQ-Deku-Scrub-Red-Potion',
   'GC-MQ-Deku-Scrub-Green-Potion',
-];
+]
 
 export const ZORAS_RIVER_SCRUB = [
   'ZR-Grotto-Deku-Scrub-Red-Potion',
   'ZR-Grotto-Deku-Scrub-Green-Potion',
-];
+]
 
 export const SACRED_FOREST_MEADOW_SCRUB = [
   'SFM-Grotto-Deku-Scrub-Red-Potion',
   'SFM-Grotto-Deku-Scrub-Green-Potion',
-];
+]
 
 export const LAKE_HYLIA_SCRUB = [
   'LH-Grotto-Deku-Scrub-Deku-Nuts',
   'LH-Grotto-Deku-Scrub-Bombs',
   'LH-Grotto-Deku-Scrub-Arrows',
-];
+]
 
 export const GERUDO_VALLEY_SCRUB = [
   'Valley-Grotto-Deku-Scrub-Red-Potion',
   'Valley-Grotto-Deku-Scrub-Green-Potion',
-];
+]
 
 export const LOST_WOODS_SCRUB = [
   'LW-Deku-Scrub-Deku-Nuts',
   'LW-Deku-Scrub-Deku-Sticks',
   'LW-Grotto-Deku-Scrub-Arrows',
-];
+]
 
 export const DESERT_COLOSSUS_SCRUB = [
   'Desert-Grotto-Deku-Scrub-Red-Potion',
   'Desert-Grotto-Deku-Scrub-Green-Potion',
-];
+]
 
 export const DEATH_MOUNTAIN_CRATER_SCRUB = [
   'DMC-Deku-Scrub-Bombs',
   'DMC-Grotto-Deku-Scrub-Deku-Nuts',
   'DMC-Grotto-Deku-Scrub-Bombs',
   'DMC-Grotto-Deku-Scrub-Arrows',
-];
+]
 
 export const GORON_CITY_SCRUB = [
   'Goron-Grotto-Deku-Scrub-Deku-Nuts',
   'Goron-Grotto-Deku-Scrub-Bombs',
   'Goron-Grotto-Deku-Scrub-Arrows',
-];
+]
 
 export const LON_LON_RANCH_SCRUB = [
   'LLR-Grotto-Deku-Scrub-Deku-Nuts',
   'LLR-Grotto-Deku-Scrub-Bombs',
   'LLR-Grotto-Deku-Scrub-Arrows',
-];
-
-export const POTS = [
-  'Goron-City-Stick-Pot',
-  'Bottom-of-the-Well-Stick-Pot',
-  'Zoras-Domain-Stick-Pot',
-  'Zoras-Domain-Nut-Pot',
-];
-
-export const ENEMIES = ['Deku-Baba-Sticks', 'Deku-Baba-Nuts'];
-
-export const OTHER = [
-  'Epona',
-  'Spirit-Temple-Nut-Crate',
-  'Gerudo-Fortress-Carpenter-Rescue',
-];
+]
 
 export const LOCATIONS = {
   'The Forest': {
@@ -1151,9 +1136,6 @@ export const LOCATIONS = {
   Miscellaneous: {
     Prizes: PRIZES,
     Songs: SONG_LOCATIONS,
-    Pots: POTS,
-    Enemies: ENEMIES,
-    Other: OTHER,
   },
   'Gold Skulltulas': {
     'Deku Tree': GS_DEKU_TREE,
@@ -1199,4 +1181,4 @@ export const LOCATIONS = {
     'Gerudo Valley': GERUDO_VALLEY_SCRUB,
     'Desert Colossus': DESERT_COLOSSUS_SCRUB,
   },
-};
+}

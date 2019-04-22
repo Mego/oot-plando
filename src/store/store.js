@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
-import plando from './reducers';
+import { createStore } from 'redux'
+import plando from './reducers'
 
-export default createStore(plando);
+export default createStore(plando)

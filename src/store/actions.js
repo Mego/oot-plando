@@ -1,4 +1,4 @@
-export const SET_LOCATION_ITEMS = 'SET_LOCATION_ITEMS';
+export const SET_LOCATION_ITEMS = 'SET_LOCATION_ITEMS'
 
 export function setLocationItemsAction(location, items) {
   return {
@@ -7,5 +7,5 @@ export function setLocationItemsAction(location, items) {
       location,
       items,
     },
-  };
+  }
 }

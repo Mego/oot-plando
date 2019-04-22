@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
-import DroppableLocation from './DroppableLocation';
-import { Draggable, DragDropContext } from 'react-beautiful-dnd';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { setLocationItemsAction } from './store/actions';
+import React, { Component } from 'react'
+import DroppableLocation from './DroppableLocation'
+import { Draggable, DragDropContext } from 'react-beautiful-dnd'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import { setLocationItemsAction } from './store/actions'
 import {
   assignItem,
   unassignItem,
   moveItem,
   exportLocations,
-} from './store/helpers';
-import { LOCATIONS } from './data/Constants';
-import { showLocationsJSON } from './util';
-import { connect } from 'react-redux';
-import 'react-tabs/style/react-tabs.css';
+} from './store/helpers'
+import { LOCATIONS } from './data/Constants'
+import { showLocationsJSON } from './util'
+import { connect } from 'react-redux'
+import 'react-tabs/style/react-tabs.css'
 
-const grid = 8;
+const grid = 8
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
-  const result = [...list];
-  const [removed] = result.splice(startIndex, 1);
-  result.splice(endIndex, 0, removed);
+  const result = [...list]
+  const [removed] = result.splice(startIndex, 1)
+  result.splice(endIndex, 0, removed)
 
-  return result;
-};
+  return result
+}
 
 const getItemStyle = (isDragging, draggableStyle) => ({
   // some basic styles to make the items look a bit nicer
@@ -37,17 +37,17 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 
   // styles we need to apply on draggables
   ...draggableStyle,
-});
+})
 
 class Locations extends Component {
-  getList = (id) => this.props.locations[id];
+  getList = (id) => this.props.locations[id]
 
   onDragEnd = (result) => {
-    const { source, destination } = result;
+    const { source, destination } = result
 
     // dropped outside the list
     if (!destination) {
-      return;
+      return
     }
 
     if (source.droppableId === destination.droppableId) {
@@ -55,26 +55,26 @@ class Locations extends Component {
         this.getList(source.droppableId),
         source.index,
         destination.index
-      );
-      this.props.onSetLocationItems(source.droppableId, items);
+      )
+      this.props.onSetLocationItems(source.droppableId, items)
     } else {
       const item = this.getList(source.droppableId)
         .splice(source.index, 1)
-        .pop();
+        .pop()
       this.props.onMoveItem(
         this.props.locations,
         item,
         source.droppableId,
         destination.droppableId,
         destination.index
-      );
+      )
     }
-  };
+  }
 
   export = () => {
-    const locations = exportLocations(this.props.locations);
-    showLocationsJSON(locations);
-  };
+    const locations = exportLocations(this.props.locations)
+    showLocationsJSON(locations)
+  }
 
   render() {
     return (
@@ -210,11 +210,11 @@ class Locations extends Component {
           </div>
         </DragDropContext>
       </div>
-    );
+    )
   }
 }
 
-const mapStateToProps = (state) => ({ locations: state.locations });
+const mapStateToProps = (state) => ({ locations: state.locations })
 const mapDispatchToProps = (dispatch) => ({
   onAssignItem: (state, item, location) =>
     assignItem(state, item, location).map((x) => dispatch(x)),
@@ -226,9 +226,9 @@ const mapDispatchToProps = (dispatch) => ({
     ),
   onSetLocationItems: (location, items) =>
     dispatch(setLocationItemsAction(location, items)),
-});
+})
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Locations);
+)(Locations)
